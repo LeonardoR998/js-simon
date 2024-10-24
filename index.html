@@ -10,7 +10,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="./logo-boolean.ico" />
   </head>
   <body>
@@ -18,60 +17,35 @@
       <div class="card text-center">
         <div class="card-header fs-1">Simon Says</div>
         <div class="card-body">
-          <h5 class="card-title">
-            Inserisci i numeri che ricordi (non importa l'ordine!)
+          <h5 class="card-title">Ricorda questi numeri:</h5>
+          <div id="numbers" class="row mb-3"></div>
+          <h5 class="card-title d-none" id="input-title">
+            Inserisci i numeri che ricordi (non importa l'ordine!):
           </h5>
-          <div class="row mt-5">
+          <div id="inputs" class="row mt-5 d-none">
             <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
+              <input class="form-control" type="number" />
             </div>
             <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
+              <input class="form-control" type="number" />
             </div>
             <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
+              <input class="form-control" type="number" />
             </div>
             <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
+              <input class="form-control" type="number" />
             </div>
             <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
-            </div>
-            <div class="col-2">
-              <input
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="default input example"
-              />
+              <input class="form-control" type="number" />
             </div>
           </div>
-          <button type="button" class="btn btn-primary mt-4">Conferma</button>
+          <button
+            type="button"
+            class="btn btn-primary mt-4 d-none"
+            id="confirm-button"
+          >
+            Conferma
+          </button>
         </div>
       </div>
     </div>
